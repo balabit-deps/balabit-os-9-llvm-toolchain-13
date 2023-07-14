@@ -159,3 +159,6 @@ fix-merge-MergeFunctions-scheduling.diff
 llvm-objcopy-COFF-Consider-section-flags-when-adding.patch
 yaml2obj-COFF-Allow-variable-number-of-directories.patch
 llvm-objcopy-COFF-Fix-test-for-debug-dir-presence.patch
+CVE-2023-29932.patch
+CVE-2023-29934.patch
+CVE-2023-29939.patch

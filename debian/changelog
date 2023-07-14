@@ -1,3 +1,21 @@
+llvm-toolchain-13 (1:13.0.1-2ubuntu2.2) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: canonicalize pass crashed with segmentation fault
+    - debian/patches/CVE-2023-29932.patch: Use default attributes for
+      intrinsics
+    - CVE-2023-29932
+  * SECURITY UPDATE: convert-scf-to-spirv Pass crashed with segmentation
+    fault
+    - debian/patches/CVE-2023-29934.patch: Account for type conversion
+      failures in scf-to-spirv
+    - CVE-2023-29934
+  * SECURITY UPDATE: spirv-lower-abi-attrs crashes with segmentation faults
+    - debian/patches/CVE-2023-29939.patch: Fix crash in
+      spirv-lower-abi-attributes when the are no SPIR-V env attributes
+    - CVE-2023-29939
+
+ -- Nishit Majithia <nishit.majithia@canonical.com>  Fri, 14 Jul 2023 10:16:26 +0530
+
 llvm-toolchain-13 (1:13.0.1-2ubuntu2.1) jammy; urgency=medium
 
   * Backport D115098 for Rust 1.59 (LP: #1973037)
